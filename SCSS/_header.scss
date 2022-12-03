@@ -1,0 +1,92 @@
+@use "variables" as *;
+@use "mixin"as *;
+
+.header {
+    background-color: $white;
+    height: 120px;
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+
+    @include mq(tab){
+        height: 64px;
+    }
+
+    &-logo {
+        height: 73.66px;
+        display: flex;
+        
+        a {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+
+            img {
+                width: 86px;
+            }
+
+            p {
+                font-size: 32px;
+                color: $main;
+                font-family: $serif;
+                font-weight: bold;
+                margin-left: 16px;
+            }
+            
+        }
+
+        @include mq(tab){
+            height: 48.66px;
+
+            a {
+
+                img {
+                    width: 56px;
+                }
+
+                p {
+                    font-size: 20px;
+                    margin-left: 10px;
+                }
+
+            }
+
+        }
+
+    }  
+
+    &-nav {
+        display: flex;
+        flex-flow: row;
+
+        &__menu {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            margin-right: 32px;
+
+            &__link {
+                margin-right: 16px;
+                font-weight: bold;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        @include mq(tab){
+            display: none;
+        }
+
+    }
+
+}

@@ -1,0 +1,63 @@
+@use "variables"as *;
+
+.sns-link {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+
+    &__icon {
+        color: $black;
+        margin-right: 16px;
+        font-size: 32px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+    }
+}
+
+.btn {
+    background-color: $white;
+    color: $main;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: $sans;
+    height: 50px;
+    width: 200px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.35);
+
+    &--primary {
+        background-color: #A906C7;
+        color: $white;
+    }
+}
+
+.btn2 {
+    background-color: $white;
+    color: $main;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: $sans;
+    height: 50px;
+    width: 310px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.35);
+
+    &--primary {
+        background-color: #A906C7;
+        color: $white;
+    }
+    
+    &--sub {
+        background-color: $white;
+        color:  #A906C7;
+    }
+}
